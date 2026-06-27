@@ -618,7 +618,7 @@ export default function Home() {
         {/* COURSES AND COSTS SECTION */}
         <section id="investment" className="w-full py-[140px] bg-[#0a0a0a] border-y border-white/5 relative overflow-hidden bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:32px_32px]">
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px]">
-            <motion.div variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-20">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-20">
               <span className="text-white/40 text-[10px] font-bold tracking-[0.25em] uppercase mb-4 block">Investment</span>
               <h2 className="font-sans font-light text-3xl md:text-5xl text-white leading-tight tracking-tight">
                 Courses and Costs
@@ -628,7 +628,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {/* Premium 6-Month Course Card */}
-              <div className="bg-[#111] p-10 border border-white/20 relative overflow-hidden flex flex-col justify-between transform md:-translate-y-4 shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-6 transition-transform duration-500">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInLeft} className="bg-[#111] p-10 border border-white/20 relative overflow-hidden flex flex-col justify-between transform md:-translate-y-4 shadow-[0_0_40px_rgba(255,255,255,0.05)] hover:-translate-y-6 transition-transform duration-500">
                 <div className="absolute top-0 right-0 bg-white text-black text-[10px] font-bold tracking-[0.15em] uppercase px-4 py-2 z-10">
                   Most Popular
                 </div>
@@ -647,10 +647,10 @@ export default function Home() {
                     Enroll Now <ArrowRight className="h-5 w-5" />
                   </button>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Standard 2-Month Course Card */}
-              <div className="bg-transparent p-10 border border-white/10 flex flex-col justify-between hover:border-white/30 transition-all duration-500">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInRight} className="bg-transparent p-10 border border-white/10 flex flex-col justify-between hover:border-white/30 transition-all duration-500">
                 <div>
                   <h3 className="font-sans font-medium text-2xl text-white mb-2 tracking-tight">2-Month Online Certificate Course on Contract Drafting & Negotiation</h3>
                   <div className="mt-8">
@@ -663,7 +663,7 @@ export default function Home() {
                     Learn More
                   </button>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -919,9 +919,9 @@ export default function Home() {
             </motion.div>
             
             {/* Big Skill Building Block */}
-            <div className="w-full bg-transparent border border-black/10 p-10 md:p-16 mb-8 hover:border-black/30 transition-all duration-500 hover:shadow-2xl">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInDown} className="group w-full bg-transparent border border-black/10 p-10 md:p-16 mb-8 hover:border-[#164336]/50 hover:bg-[#164336]/[0.02] transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden">
               <div className="mb-12 border-b border-black/10 pb-8">
-                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 mb-3">01.</div>
+                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 group-hover:text-[#164336] transition-colors duration-300 mb-3">01.</div>
                 <h3 className="font-sans font-medium text-3xl md:text-4xl text-black tracking-tight">Skill Building: 22 Live Sessions on Career Skills</h3>
               </div>
               
@@ -961,26 +961,26 @@ export default function Home() {
                     <li className="flex gap-3 items-start text-black/70 font-light text-[15px]"><span className="text-black font-medium mt-0.5">✓</span> Trademark, copyright, data protection, tech contracts</li>
                   </ul>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             {/* Grid for points 2, 3, 4 */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-transparent border border-black/10 p-10 hover:border-black/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 mb-3">02.</div>
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInDown} className="group bg-transparent border border-black/10 p-10 hover:border-[#164336]/50 hover:bg-[#164336]/[0.02] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl relative overflow-hidden">
+                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 group-hover:text-[#164336] transition-colors duration-300 mb-3">02.</div>
                 <h4 className="font-sans font-medium text-2xl text-black mb-4 tracking-tight">Opportunities Sharing</h4>
                 <p className="text-black/70 font-light leading-relaxed">Exclusive WhatsApp Groups for Internships, Jobs, and Freelancing Opportunities.</p>
-              </div>
-              <div className="bg-transparent border border-black/10 p-10 hover:border-black/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 mb-3">03.</div>
+              </motion.div>
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInDown} className="group bg-transparent border border-black/10 p-10 hover:border-[#164336]/50 hover:bg-[#164336]/[0.02] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl relative overflow-hidden">
+                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 group-hover:text-[#164336] transition-colors duration-300 mb-3">03.</div>
                 <h4 className="font-sans font-medium text-2xl text-black mb-4 tracking-tight">Dedicated Support</h4>
                 <p className="text-black/70 font-light leading-relaxed">Sharing your profiles directly with partner organisations for internships and CV reviews.</p>
-              </div>
-              <div className="bg-transparent border border-black/10 p-10 hover:border-black/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
-                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 mb-3">04.</div>
+              </motion.div>
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInDown} className="group bg-transparent border border-black/10 p-10 hover:border-[#164336]/50 hover:bg-[#164336]/[0.02] transition-all duration-500 hover:-translate-y-2 hover:shadow-xl relative overflow-hidden">
+                <div className="text-[11px] font-bold tracking-[0.2em] uppercase text-black/40 group-hover:text-[#164336] transition-colors duration-300 mb-3">04.</div>
                 <h4 className="font-sans font-medium text-2xl text-black mb-4 tracking-tight">One-on-One Coaching</h4>
                 <p className="text-black/70 font-light leading-relaxed">Bi-monthly, one-to-one, 30-45 minutes long career coaching session with LLS’ founders and faculty.</p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
