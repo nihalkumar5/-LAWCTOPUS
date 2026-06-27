@@ -1700,7 +1700,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }} 
               animate={{ opacity: 1, scale: 1, y: 0 }} 
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-4xl bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row"
+              className="relative w-full max-w-5xl bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row"
             >
               <button 
                 onClick={() => setIsSignUpModalOpen(false)}
@@ -1710,12 +1710,12 @@ export default function Home() {
               </button>
 
               {/* LEFT SIDE - FORM */}
-              <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
-                <div className="md:mt-4">
-                  <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-3">Welcome to Elite!</h3>
-                  <p className="text-charcoal/60 mb-10 font-light text-[15px]">Simplify your workflow and boost your productivity with Lawctopus Elite. Get started today.</p>
+              <div className="w-full md:w-1/2 p-8 md:px-14 md:py-10 flex flex-col justify-center">
+                <div className="md:mt-0">
+                  <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-2">Welcome to Elite!</h3>
+                  <p className="text-charcoal/60 mb-6 font-light text-[15px]">Simplify your workflow and boost your productivity with Lawctopus Elite. Get started today.</p>
 
-                  <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
+                  <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
                     <div>
                       <input required type="text" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Full Name" />
                     </div>
@@ -1735,32 +1735,32 @@ export default function Home() {
                     </button>
                   </form>
                   
-                  <div className="mt-10 flex items-center gap-4">
+                  <div className="mt-8 flex items-center gap-4">
                     <div className="h-px bg-gray-200 flex-1"></div>
                     <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">or contact us</span>
                     <div className="h-px bg-gray-200 flex-1"></div>
                   </div>
 
-                  <div className="flex justify-center gap-5 mt-8">
-                    <a href="#" className="w-14 h-14 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
-                      <Phone className="w-5 h-5 text-white" />
+                  <div className="flex justify-center gap-5 mt-6">
+                    <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
+                      <Phone className="w-4 h-4 text-white" />
                     </a>
-                    <a href="#" className="w-14 h-14 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
-                      <Mail className="w-5 h-5 text-white" />
+                    <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
+                      <Mail className="w-4 h-4 text-white" />
                     </a>
-                    <a href="#" className="w-14 h-14 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
-                      <Globe className="w-5 h-5 text-white" />
+                    <a href="#" className="w-12 h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
+                      <Globe className="w-4 h-4 text-white" />
                     </a>
                   </div>
                   
-                  <p className="text-center text-sm text-charcoal/60 mt-10 font-medium">
+                  <p className="text-center text-sm text-charcoal/60 mt-8 font-medium">
                     Not sure yet? <a href="#" className="text-[#164336] font-bold hover:underline">Download Brochure</a>
                   </p>
                 </div>
               </div>
 
               {/* RIGHT SIDE - GRAPHIC */}
-              <div className="hidden md:flex w-1/2 bg-[#f4f9f6] p-12 flex-col items-center justify-center relative overflow-hidden">
+              <div className="hidden md:flex w-1/2 bg-[#f4f9f6] p-10 flex-col items-center justify-center relative overflow-hidden">
                 {/* Abstract floating circles */}
                 <div className="absolute top-10 left-10 w-32 h-32 border-2 border-green-200/50 rounded-full"></div>
                 <div className="absolute top-20 right-20 w-48 h-48 border-2 border-green-200/50 rounded-full"></div>
@@ -1801,7 +1801,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mt-20 text-center z-10 relative">
+                <div className="mt-12 text-center z-10 relative">
                   <h4 className="text-2xl font-bold text-gray-900 mb-2">Make your work easier<br/>and organized with <span className="text-[#164336]">Elite</span></h4>
                 </div>
               </div>
