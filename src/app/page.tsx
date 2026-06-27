@@ -687,8 +687,9 @@ export default function Home() {
               </motion.div>
               
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInRight} className="flex flex-col gap-8">
-                <div className="flex justify-center lg:justify-end w-full -mb-[2rem] relative z-10 translate-y-4 lg:pr-12">
-                  <Image src="/3.png" alt="Student Reading" width={500} height={500} className="w-full max-w-[380px] object-contain mix-blend-multiply opacity-95 drop-shadow-xl transform scale-110 origin-bottom" />
+                <div className="flex flex-col items-center lg:items-end w-full lg:pr-16 mb-4">
+                  <Image src="/3.png" alt="Student Reading" width={400} height={400} className="w-full max-w-[260px] object-contain mix-blend-multiply opacity-95 drop-shadow-xl" />
+                  <div className="w-[260px] h-[2px] bg-black/10 mt-6 rounded-full"></div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="group bg-transparent border border-black/10 hover:border-black/30 p-10 flex-1 flex flex-col justify-center items-center text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
