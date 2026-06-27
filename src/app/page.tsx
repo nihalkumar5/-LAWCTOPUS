@@ -1298,7 +1298,7 @@ export default function Home() {
         {/* SECTION 6: THE CURRICULUM EXPERIENCE */}
         <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
-            <div className="relative w-full max-w-[700px] h-[700px]">
+            <div className="relative w-full max-w-[700px] h-[700px] translate-y-32">
               <Image src="/5.png" alt="Curriculum Background" fill className="object-contain filter invert opacity-20 mix-blend-screen" />
             </div>
           </div>
