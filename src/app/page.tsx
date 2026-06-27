@@ -823,7 +823,7 @@ export default function Home() {
                   <h2 className="font-sans font-light text-4xl lg:text-5xl text-charcoal leading-tight tracking-tight">Who can enroll<br/>for this course?</h2>
                 </div>
                 <div className="hidden md:block mt-12 mix-blend-multiply opacity-95">
-                  <Image src="/6.png" alt="Professional" width={400} height={400} className="w-full object-contain" />
+                  <Image src="/6.png" alt="Professional" width={500} height={500} className="w-full object-contain scale-[1.35] transform origin-top" />
                 </div>
               </motion.div>
 
