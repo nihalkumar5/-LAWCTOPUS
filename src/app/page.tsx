@@ -1712,8 +1712,8 @@ export default function Home() {
               {/* LEFT SIDE - FORM */}
               <div className="w-full md:w-1/2 p-8 md:px-14 md:py-10 flex flex-col justify-center">
                 <div className="md:mt-0">
-                  <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-2">Welcome to Elite!</h3>
-                  <p className="text-charcoal/60 mb-6 font-light text-[15px]">Simplify your workflow and boost your productivity with Lawctopus Elite. Get started today.</p>
+                  <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-2">Join the Elite 1%</h3>
+                  <p className="text-charcoal/60 mb-6 font-light text-[15px]">Master contract drafting and freelancing in just 6 months. Enter your details to secure your seat.</p>
 
                   <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
                     <div>
@@ -1737,7 +1737,7 @@ export default function Home() {
                   
                   <div className="mt-8 flex items-center gap-4">
                     <div className="h-px bg-gray-200 flex-1"></div>
-                    <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">or contact us</span>
+                    <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">Need Assistance?</span>
                     <div className="h-px bg-gray-200 flex-1"></div>
                   </div>
 
@@ -1773,8 +1773,8 @@ export default function Home() {
                     <Check className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <p className="text-sm font-bold text-gray-900">54+ Sessions</p>
-                    <p className="text-xs text-gray-500 font-medium">Live Expert</p>
+                    <p className="text-sm font-bold text-gray-900">54+ Live Sessions</p>
+                    <p className="text-xs text-gray-500 font-medium">Industry Experts</p>
                   </div>
                 </div>
 
@@ -1785,22 +1785,22 @@ export default function Home() {
 
                 {/* Floating Widget 2 */}
                 <div className="absolute bottom-1/3 right-8 bg-white p-5 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col gap-3 z-10 animate-[bounce_5s_infinite]">
-                  <p className="text-sm font-bold text-gray-900">Contract Drafting</p>
-                  <p className="text-xs text-gray-500 font-medium -mt-2">10 Tasks</p>
+                  <p className="text-sm font-bold text-gray-900">Practical Skills</p>
+                  <p className="text-xs text-gray-500 font-medium -mt-2">24+ Contracts</p>
                   <div className="flex items-center gap-4 mt-2">
                     <span className="text-[10px] font-bold border border-gray-200 rounded-full px-3 py-1.5">Drafting</span>
                     <div className="relative w-10 h-10">
                       <svg viewBox="0 0 36 36" className="w-10 h-10 text-green-500">
                         <path className="text-gray-100" strokeWidth="4" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <path className="text-green-500" strokeDasharray="84, 100" strokeWidth="4" stroke="currentColor" fill="none" strokeLinecap="round" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path className="text-green-500" strokeDasharray="100, 100" strokeWidth="4" stroke="currentColor" fill="none" strokeLinecap="round" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
                       </svg>
-                      <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold">84%</span>
+                      <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold">100%</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="mt-12 text-center z-10 relative">
-                  <h4 className="text-2xl font-bold text-gray-900 mb-2">Make your work easier<br/>and organized with <span className="text-[#164336]">Elite</span></h4>
+                  <h4 className="text-2xl font-bold text-gray-900 mb-2">Build a dream career<br/>with <span className="text-[#164336]">Lawctopus Elite</span></h4>
                 </div>
               </div>
 
