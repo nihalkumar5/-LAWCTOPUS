@@ -770,7 +770,7 @@ export default function Home() {
               </h2>
             </motion.div>
 
-            <div className="w-full flex justify-center mb-24 opacity-80 mix-blend-screen">
+            <div className="w-full flex justify-center mb-8 opacity-80 mix-blend-screen">
               <Image src="/4.png" alt="Learning Experience" width={800} height={500} className="w-full max-w-[700px] object-contain filter invert" />
             </div>
             
