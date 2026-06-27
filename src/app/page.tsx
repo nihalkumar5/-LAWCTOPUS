@@ -961,8 +961,8 @@ export default function Home() {
                     <li className="flex gap-3 items-start text-black/70 font-light text-[15px]"><span className="text-black font-medium mt-0.5">✓</span> Trademark, copyright, data protection, tech contracts</li>
                   </ul>
                 </div>
-              </motion.div>
-            </div>
+              </div>
+            </motion.div>
 
             {/* Grid for points 2, 3, 4 */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
