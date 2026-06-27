@@ -1290,8 +1290,11 @@ export default function Home() {
         </section>
 
         {/* SECTION 6: THE CURRICULUM EXPERIENCE */}
-        <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10">
-          <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px]">
+        <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10 relative overflow-hidden">
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            <Image src="/2.png" alt="Curriculum Background" fill className="object-cover opacity-[15%] filter invert mix-blend-screen" />
+          </div>
+          <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInUp} className="text-center max-w-2xl mx-auto mb-8">
               <span className="text-white/40 text-[10px] font-bold tracking-[0.25em] uppercase block mb-4">Curriculum Roadmap</span>
             <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">Structure of this Course</h2>
@@ -1343,9 +1346,6 @@ export default function Home() {
                   }`} />
                 </button>
               ))}
-              <div className="hidden lg:flex justify-center mt-12 opacity-60 mix-blend-screen">
-                <Image src="/2.png" alt="Building Blocks" width={300} height={300} className="w-full max-w-[250px] object-contain filter invert" />
-              </div>
             </div>
 
             {/* Timeline Detail Card (Right Column) */}
@@ -1470,8 +1470,8 @@ export default function Home() {
       <footer className="w-full bg-[#0a0a0a] pt-24 pb-12 border-t border-white/10 relative overflow-hidden">
         {/* Subtle Background Elements */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#164336] rounded-full blur-[150px] opacity-10 pointer-events-none"></div>
-        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-          <Image src="/footer_illustration.png" alt="Footer Background" fill className="object-cover opacity-30 mix-blend-screen" />
+        <div className="absolute inset-0 z-0 pointer-events-none">
+          <Image src="/footer_illustration.png" alt="Footer Background" fill className="object-cover opacity-[35%] mix-blend-screen" />
         </div>
 
         <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
