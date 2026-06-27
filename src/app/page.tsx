@@ -743,7 +743,7 @@ export default function Home() {
                 ))}
                 </div>
                 <div className="lg:col-span-5 hidden lg:flex flex-col justify-center sticky top-24 max-h-[80vh]">
-                  <Image src="/3.png" alt="Student Reading" width={600} height={600} className="w-full max-w-[500px] object-contain mx-auto mix-blend-multiply opacity-90 drop-shadow-xl" />
+                  <Image src="/3.png" alt="Student Reading" width={800} height={800} className="w-full max-w-none object-contain mx-auto mix-blend-multiply opacity-95 drop-shadow-xl scale-[1.35] transform origin-right" />
                 </div>
               </div>
 
@@ -1295,8 +1295,10 @@ export default function Home() {
 
         {/* SECTION 6: THE CURRICULUM EXPERIENCE */}
         <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10 relative overflow-hidden">
-          <div className="absolute inset-0 z-0 pointer-events-none">
-            <Image src="/2.png" alt="Curriculum Background" fill className="object-contain opacity-70" />
+          <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
+            <div className="relative w-full max-w-[700px] h-[700px]">
+              <Image src="/2.png" alt="Curriculum Background" fill className="object-contain opacity-100" />
+            </div>
           </div>
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInUp} className="text-center max-w-2xl mx-auto mb-8">
