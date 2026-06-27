@@ -1477,7 +1477,7 @@ export default function Home() {
         {/* Subtle Background Elements */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#164336] rounded-full blur-[150px] opacity-10 pointer-events-none"></div>
         <div className="absolute inset-0 z-0 pointer-events-none">
-          <Image src="/footer_illustration.png" alt="Footer Background" fill className="object-cover opacity-[35%] mix-blend-screen" />
+          <Image src="/footer_illustration.png" alt="Footer Background" fill className="object-cover opacity-[28%] mix-blend-screen" />
         </div>
 
         <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
