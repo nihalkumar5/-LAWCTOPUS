@@ -1704,7 +1704,7 @@ export default function Home() {
             >
               <button 
                 onClick={() => setIsSignUpModalOpen(false)}
-                className="absolute top-6 right-6 md:right-auto md:left-6 z-20 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-charcoal/60 hover:text-charcoal hover:bg-gray-200 transition-colors"
+                className="absolute top-6 right-6 z-20 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-charcoal/60 hover:text-charcoal hover:bg-gray-200 transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -1779,10 +1779,8 @@ export default function Home() {
                 </div>
 
                 {/* Main Illustration Area */}
-                <div className="relative z-0 mt-8">
-                  <div className="w-72 h-72 bg-[#164336]/10 rounded-full flex items-center justify-center">
-                    <Award className="w-32 h-32 text-[#164336]" />
-                  </div>
+                <div className="relative z-0 mt-4 flex items-center justify-center w-full max-w-[320px]">
+                  <img src="/1.png" alt="Elite Course Illustration" className="w-full h-auto object-contain z-10 drop-shadow-2xl" />
                 </div>
 
                 {/* Floating Widget 2 */}
