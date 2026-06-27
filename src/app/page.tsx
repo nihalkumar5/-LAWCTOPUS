@@ -686,14 +686,19 @@ export default function Home() {
                 </div>
               </motion.div>
               
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInRight} className="flex flex-col sm:flex-row gap-6">
-                <div className="group bg-transparent border border-black/10 hover:border-black/30 p-10 flex-1 flex flex-col justify-center items-center text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInRight} className="flex flex-col gap-8">
+                <div className="flex justify-center lg:justify-end w-full">
+                  <Image src="/3.png" alt="Student Reading" width={400} height={400} className="w-full max-w-[320px] object-contain mix-blend-multiply opacity-95 drop-shadow-xl" />
+                </div>
+                <div className="flex flex-col sm:flex-row gap-6">
+                  <div className="group bg-transparent border border-black/10 hover:border-black/30 p-10 flex-1 flex flex-col justify-center items-center text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
                   <div className="text-5xl lg:text-6xl font-sans font-medium text-black mb-3 tracking-tighter">20k+</div>
                   <div className="text-black/40 text-[11px] font-bold uppercase tracking-[0.2em]">Learners Taught</div>
                 </div>
                 <div className="group bg-transparent border border-black/10 hover:border-black/30 p-10 flex-1 flex flex-col justify-center items-center text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
                   <div className="text-5xl lg:text-6xl font-sans font-medium text-black mb-3 tracking-tighter flex items-baseline justify-center">93<span className="text-2xl lg:text-3xl font-light text-black/50 ml-1">/100</span></div>
                   <div className="text-black/40 text-[11px] font-bold uppercase tracking-[0.2em]">Avg Rating (1k+ Reviews)</div>
+                </div>
                 </div>
               </motion.div>
             </div>
@@ -707,8 +712,8 @@ export default function Home() {
                 </h2>
               </motion.div>
               
-              <div className="max-w-[1200px] mx-auto border-t border-black/10 grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <div className="lg:col-span-7">
+              <div className="max-w-[900px] mx-auto border-t border-black/10">
+                <div className="w-full">
                   {[
                   { title: "Well-researched, practical & detailed reading resources" },
                   { title: "Weekly Live Sessions for the first 2 months" },
@@ -741,10 +746,6 @@ export default function Home() {
                     </div>
                   </div>
                 ))}
-                </div>
-                <div className="lg:col-span-5 hidden lg:flex flex-col justify-end sticky top-24 max-h-[80vh]">
-                  <Image src="/3.png" alt="Student Reading" width={800} height={800} className="w-full max-w-none object-contain ml-auto mr-[-2rem] mix-blend-multiply opacity-95 drop-shadow-xl scale-[1.7] transform translate-x-12 origin-bottom pb-4" />
-                </div>
               </div>
 
               <div className="max-w-5xl mx-auto mt-12 px-6 md:px-10">
@@ -1297,7 +1298,7 @@ export default function Home() {
         <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
             <div className="relative w-full max-w-[700px] h-[700px]">
-              <Image src="/2.png" alt="Curriculum Background" fill className="object-contain opacity-100" />
+              <Image src="/5.png" alt="Curriculum Background" fill className="object-contain opacity-100" />
             </div>
           </div>
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
