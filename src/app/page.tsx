@@ -746,6 +746,7 @@ export default function Home() {
                     </div>
                   </div>
                 ))}
+                </div>
               </div>
 
               <div className="max-w-5xl mx-auto mt-12 px-6 md:px-10">
