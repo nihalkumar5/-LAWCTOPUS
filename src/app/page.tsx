@@ -1130,7 +1130,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-16">
               
               {/* Point 1 */}
-              <div className="relative group">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} transition={{ delay: 0.1 }} className="relative group">
                 <span className="absolute -top-10 -left-6 text-[120px] font-bold text-black/[0.03] leading-none z-0 transition-colors duration-500 group-hover:text-[#164336]/10">01</span>
                 <div className="relative z-10">
                   <h4 className="text-2xl text-charcoal font-medium mb-4 tracking-tight">LIVE AI Sessions with Leading Legal-Tech Organisations</h4>
@@ -1141,10 +1141,10 @@ export default function Home() {
                     <li className="flex gap-3 items-start text-charcoal/70 font-light text-[15px]"><span className="text-[#164336] mt-0.5">✓</span> Understanding where AI can and cannot be used</li>
                   </ul>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Point 2 */}
-              <div className="relative group">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} transition={{ delay: 0.2 }} className="relative group">
                 <span className="absolute -top-10 -left-6 text-[120px] font-bold text-black/[0.03] leading-none z-0 transition-colors duration-500 group-hover:text-[#164336]/10">02</span>
                 <div className="relative z-10">
                   <h4 className="text-2xl text-charcoal font-medium mb-4 tracking-tight">4-Hour Recorded Workshop: AI for Lawyers</h4>
@@ -1155,10 +1155,10 @@ export default function Home() {
                     <li className="flex gap-3 items-start text-charcoal/70 font-light text-[15px]"><span className="text-[#164336] mt-0.5">✓</span> Technology & Ethics Behind AI in Law</li>
                   </ul>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Point 3 */}
-              <div className="relative group">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} transition={{ delay: 0.3 }} className="relative group">
                 <span className="absolute -top-10 -left-6 text-[120px] font-bold text-black/[0.03] leading-none z-0 transition-colors duration-500 group-hover:text-[#164336]/10">03</span>
                 <div className="relative z-10">
                   <h4 className="text-2xl text-charcoal font-medium mb-4 tracking-tight">Complimentary Access to Prism (Indian Kanoon)</h4>
@@ -1169,19 +1169,19 @@ export default function Home() {
                     <li className="flex gap-3 items-start text-charcoal/70 font-light text-[15px]"><span className="text-[#164336] mt-0.5">✓</span> Exploring real-world use cases on India’s largest caselaw repository</li>
                   </ul>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Point 4 */}
-              <div className="relative group">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} transition={{ delay: 0.4 }} className="relative group">
                 <span className="absolute -top-10 -left-6 text-[120px] font-bold text-black/[0.03] leading-none z-0 transition-colors duration-500 group-hover:text-[#164336]/10">04</span>
                 <div className="relative z-10">
                   <h4 className="text-2xl text-charcoal font-medium mb-4 tracking-tight">AI Guidance from Faculty & Mentors</h4>
                   <p className="text-charcoal/70 font-light">Beyond tools and workshops, AI is actively discussed inside select live classes. Our Faculty and Course Mentors regularly explain how AI can be used to improve performance in corporate law, contract drafting, and build stronger CVs and portfolios. We focus on how AI enhances, not replaces, sound legal thinking.</p>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Point 5 */}
-              <div className="relative group md:col-span-2">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} transition={{ delay: 0.5 }} className="relative group md:col-span-2">
                 <span className="absolute -top-10 -left-6 text-[120px] font-bold text-black/[0.03] leading-none z-0 transition-colors duration-500 group-hover:text-[#164336]/10">05</span>
                 <div className="relative z-10">
                   <h4 className="text-2xl text-charcoal font-medium mb-4 tracking-tight">Access to a 31-page eBook on AI Prompts</h4>
@@ -1192,7 +1192,7 @@ export default function Home() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
             </div>
           </div>
