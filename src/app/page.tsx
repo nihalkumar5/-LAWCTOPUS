@@ -233,6 +233,21 @@ export default function Home() {
     visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] } }
   };
 
+  const flyInZoom = {
+    hidden: { opacity: 0, scale: 0.2, y: 100 },
+    visible: { 
+      opacity: 1, 
+      scale: 1, 
+      y: 0, 
+      transition: { 
+        type: "spring", 
+        stiffness: 100, 
+        damping: 15,
+        duration: 1
+      } 
+    }
+  };
+
   const staggerContainer = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { staggerChildren: 0.12, delayChildren: 0.1 } }
@@ -1452,8 +1467,16 @@ export default function Home() {
         <section className="w-full py-[100px] bg-[#0a0a0a] relative overflow-hidden">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#164336] rounded-full blur-[200px] opacity-15 pointer-events-none"></div>
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={scaleIn} className="max-w-[800px] mx-auto px-6 relative z-10 text-center">
-            <span className="text-white/40 text-[10px] font-bold tracking-[0.25em] uppercase block mb-6">Limited Seats Available</span>
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={flyInZoom} className="max-w-[800px] mx-auto px-6 relative z-10 text-center">
+            <div className="flex justify-center mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-[11px] font-bold tracking-[0.2em] uppercase shadow-[0_0_15px_rgba(249,115,22,0.15)]">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
+                </span>
+                Limited Seats Available
+              </span>
+            </div>
             <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight mb-6">
               Ready to Master<br/><span className="font-medium">Contract Drafting?</span>
             </h2>
