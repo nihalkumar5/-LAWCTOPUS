@@ -569,7 +569,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
               
               {/* Before Card */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInLeft} className="bg-transparent border border-black/10 p-10 relative overflow-hidden transition-all duration-300">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} className="bg-transparent border border-black/10 p-10 relative overflow-hidden transition-all duration-300">
                 <div className="flex items-center gap-3 mb-10">
                   <div className="h-8 w-8 rounded-none border border-black/20 text-black/60 flex items-center justify-center font-bold text-sm">✕</div>
                   <h3 className="font-sans text-[22px] font-medium text-black tracking-tight">The Before</h3>
@@ -582,16 +582,23 @@ export default function Home() {
                     "No professional portfolio to show recruiters or clients",
                     "Lack of confidence in negotiating terms with counterparties"
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-4 items-start">
+                    <motion.li 
+                      key={i} 
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.1 + (i * 0.1) }}
+                      className="flex gap-4 items-start"
+                    >
                       <span className="text-black/30 font-bold mt-0.5 flex-shrink-0">✕</span>
                       <span className="text-black/60 text-[15px] font-light leading-relaxed">{item}</span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </motion.div>
 
               {/* After Card */}
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInRight} className="bg-[#111] border border-[#111] p-10 relative overflow-hidden transition-all duration-300 shadow-2xl hover:-translate-y-1">
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInUp} transition={{ delay: 0.2 }} className="bg-[#111] border border-[#111] p-10 relative overflow-hidden transition-all duration-300 shadow-2xl hover:-translate-y-1">
                 <div className="flex items-center gap-3 mb-10">
                   <div className="h-8 w-8 rounded-none bg-white text-black flex items-center justify-center font-bold text-sm">✓</div>
                   <h3 className="font-sans text-[22px] font-medium text-white tracking-tight">The After (Transformative Future)</h3>
@@ -604,10 +611,17 @@ export default function Home() {
                     "Possess an impressive, vetted drafting portfolio of 24+ documents",
                     "Master advanced negotiation strategies under corporate partner mentors"
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-4 items-start">
+                    <motion.li 
+                      key={i} 
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.3 + (i * 0.1) }}
+                      className="flex gap-4 items-start"
+                    >
                       <span className="text-white/80 font-bold mt-0.5 flex-shrink-0">✓</span>
                       <span className="text-white/90 text-[15px] font-medium leading-relaxed">{item}</span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
               </motion.div>
