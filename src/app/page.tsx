@@ -1292,7 +1292,7 @@ export default function Home() {
         {/* SECTION 6: THE CURRICULUM EXPERIENCE */}
         <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 z-0 pointer-events-none">
-            <Image src="/2.png" alt="Curriculum Background" fill className="object-cover opacity-[15%] filter invert mix-blend-screen" />
+            <Image src="/2.png" alt="Curriculum Background" fill className="object-cover opacity-70 filter invert mix-blend-screen" />
           </div>
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInUp} className="text-center max-w-2xl mx-auto mb-8">
