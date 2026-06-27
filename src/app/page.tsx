@@ -1700,7 +1700,7 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }} 
               animate={{ opacity: 1, scale: 1, y: 0 }} 
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-5xl bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row"
+              className="relative w-full max-w-4xl bg-white rounded-[1.5rem] md:rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row"
             >
               <button 
                 onClick={() => setIsSignUpModalOpen(false)}
@@ -1709,32 +1709,37 @@ export default function Home() {
                 <X className="w-5 h-5" />
               </button>
 
+              {/* MOBILE HEADER GRAPHIC */}
+              <div className="md:hidden w-full bg-[#f4f9f6] pt-10 pb-2 flex items-center justify-center border-b border-gray-100">
+                <img src="/1.png" alt="Elite Student" className="w-32 h-auto object-contain drop-shadow-xl" />
+              </div>
+
               {/* LEFT SIDE - FORM */}
-              <div className="w-full md:w-1/2 p-8 md:px-14 md:py-10 flex flex-col justify-center">
+              <div className="w-full md:w-1/2 p-5 md:px-10 md:py-8 flex flex-col justify-center">
                 <div className="md:mt-0">
-                  <div className="flex items-center gap-2 mb-4">
+                  <div className="flex items-center gap-2 mb-3 md:mb-4">
                     <div className="w-7 h-7 bg-[#164336] rounded text-white flex items-center justify-center font-serif font-bold text-lg leading-none pt-0.5">L</div>
                     <span className="text-xl tracking-tight text-charcoal font-light">Lawctopus<span className="font-bold">Elite</span></span>
                   </div>
-                  <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-2">Join the Elite 1%</h3>
-                  <p className="text-charcoal/60 mb-6 font-light text-[15px]">Master contract drafting and freelancing in just 6 months. Enter your details to secure your seat.</p>
+                  <h3 className="text-xl md:text-3xl leading-tight font-bold text-charcoal mb-2">Join the Elite 1%</h3>
+                  <p className="text-charcoal/60 mb-5 font-light text-[13px] md:text-[14px]">Master contract drafting and freelancing in just 6 months. Enter your details to secure your seat.</p>
 
-                  <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
+                  <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
                     <div>
-                      <input required type="text" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Full Name" />
+                      <input required type="text" className="w-full px-5 py-3 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Full Name" />
                     </div>
                     <div>
-                      <input required type="email" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Email Address" />
+                      <input required type="email" className="w-full px-5 py-3 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Email Address" />
                     </div>
                     <div>
-                      <input required type="tel" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Phone Number" />
+                      <input required type="tel" className="w-full px-5 py-3 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Phone Number" />
                     </div>
                     
-                    <div className="text-right pb-2">
-                      <a href="#" className="text-xs font-semibold text-charcoal hover:text-[#164336] transition-colors">Need help?</a>
+                    <div className="text-right pb-1">
+                      <a href="#" className="text-[11px] md:text-xs font-semibold text-charcoal hover:text-[#164336] transition-colors">Need help?</a>
                     </div>
 
-                    <button type="submit" className="w-full bg-[#0a0a0a] text-white py-4 rounded-full font-bold tracking-wide hover:bg-black transition-colors">
+                    <button type="submit" className="w-full bg-[#0a0a0a] text-white py-3 rounded-full text-sm font-bold tracking-wide hover:bg-black transition-colors">
                       Continue to Payment
                     </button>
                   </form>
