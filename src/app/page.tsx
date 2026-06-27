@@ -763,7 +763,7 @@ export default function Home() {
         {/* HOW WILL THIS COURSE HELP YOU */}
         <section className="w-full py-[140px] bg-[#0a0a0a] border-y border-white/5 relative overflow-hidden bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:32px_32px]">
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px]">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-20 relative">
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-6 relative">
               <span className="text-white/40 text-[10px] font-bold tracking-[0.25em] uppercase mb-4 block">Outcomes</span>
               <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight">
                 How Will This Course Help You?
