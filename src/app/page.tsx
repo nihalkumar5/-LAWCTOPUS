@@ -1230,7 +1230,11 @@ export default function Home() {
                 <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-[#164336]/10 text-[#164336] mb-8">
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                 </div>
-                <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-7xl text-charcoal leading-[1.1] tracking-tight mb-8">100% Money-Back Guarantee</h2>
+                <h2 className="font-sans text-charcoal leading-[1.05] tracking-tight mb-8">
+                  <span className="block text-6xl md:text-7xl lg:text-8xl font-light mb-2 text-[#164336]">100%</span>
+                  <span className="block text-4xl md:text-5xl lg:text-6xl font-medium">Money-Back</span>
+                  <span className="block text-4xl md:text-5xl lg:text-6xl font-light">Guarantee</span>
+                </h2>
                 <p className="text-charcoal/70 text-lg leading-relaxed font-light mb-6">
                   We truly believe our courses will enhance your legal skills, confidence, and career prospects.
                 </p>
