@@ -732,12 +732,15 @@ export default function Home() {
                     desc: "click_here_special" 
                   }
                 ].map((item, index) => (
-                  <div key={index} className="group border-b border-black/10 py-8 md:py-10 flex flex-col md:flex-row md:items-start gap-6 hover:bg-black/[0.02] transition-colors px-6 md:px-10">
-                    <div className="text-2xl font-sans font-medium text-black/30 w-16 flex-shrink-0 group-hover:text-black transition-colors pt-1 tracking-tighter">
+                  <div key={index} className="group border-b border-black/10 py-8 md:py-10 flex flex-col md:flex-row md:items-start gap-6 hover:bg-[#164336]/[0.03] transition-all duration-300 px-6 md:px-10 border-l-[4px] border-transparent hover:border-[#164336]">
+                    <div className="text-2xl font-sans font-medium text-black/30 w-16 flex-shrink-0 group-hover:text-[#164336] transition-all duration-300 pt-1 tracking-tighter group-hover:scale-110 origin-left">
                       {`0${index + 1}`}
                     </div>
-                    <div>
-                      <h3 className="font-sans font-medium text-2xl text-black tracking-tight group-hover:text-[#164336] transition-colors">{item.title}</h3>
+                    <div className="flex-1 transform transition-transform duration-300 group-hover:translate-x-2">
+                      <h3 className="font-sans font-medium text-2xl text-black tracking-tight group-hover:text-[#164336] transition-colors flex items-center">
+                        {item.title}
+                        <span className="opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300 ml-2">→</span>
+                      </h3>
                       {item.desc === "click_here_special" ? (
                         <p className="text-black/60 font-light leading-relaxed text-[15.5px] mt-3 max-w-4xl">
                           You will draft 9 types of agreements as part of this course, with each assignment thoroughly evaluated by the faculty. Personalized feedback will be provided to every learner. Details in the Weekly structure.{" "}
