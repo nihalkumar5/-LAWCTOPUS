@@ -423,7 +423,7 @@ export default function Home() {
 
                 <button 
                   onClick={() => setIsSignUpModalOpen(true)} 
-                  className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-10 py-5 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.5)] hover:shadow-[0_0_40px_rgba(22,67,54,0.7)] flex items-center justify-center"
+                  className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-400 bg-[length:200%_auto] hover:bg-[position:100%_center] px-10 py-5 text-charcoal font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(52,211,153,0.5)] hover:shadow-[0_0_40px_rgba(52,211,153,0.7)] flex items-center justify-center"
                 >
                   <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
                   <span className="relative flex items-center gap-3">
@@ -692,7 +692,7 @@ export default function Home() {
                 <div className="mt-12">
                   <button 
                     onClick={() => setIsSignUpModalOpen(true)} 
-                    className="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-8 py-5 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.3)] hover:shadow-[0_0_40px_rgba(22,67,54,0.5)] flex items-center justify-center"
+                    className="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-400 bg-[length:200%_auto] hover:bg-[position:100%_center] px-8 py-5 text-charcoal font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(52,211,153,0.3)] hover:shadow-[0_0_40px_rgba(52,211,153,0.5)] flex items-center justify-center"
                   >
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
                     <span className="relative flex items-center gap-3">
@@ -1064,7 +1064,7 @@ export default function Home() {
                     </div>
                     <button 
                       onClick={() => setIsSignUpModalOpen(true)} 
-                      className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-8 py-4 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.3)] hover:shadow-[0_0_40px_rgba(22,67,54,0.5)] flex items-center justify-center"
+                      className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-400 bg-[length:200%_auto] hover:bg-[position:100%_center] px-8 py-4 text-charcoal font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(52,211,153,0.3)] hover:shadow-[0_0_40px_rgba(52,211,153,0.5)] flex items-center justify-center"
                     >
                       <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
                       <span className="relative flex items-center gap-3">
@@ -1521,7 +1521,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button 
                 onClick={() => setIsSignUpModalOpen(true)} 
-                className="group relative overflow-hidden rounded-full bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-12 py-5 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.4)] hover:shadow-[0_0_40px_rgba(22,67,54,0.6)] flex items-center justify-center"
+                className="group relative overflow-hidden rounded-full bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-400 bg-[length:200%_auto] hover:bg-[position:100%_center] px-12 py-5 text-charcoal font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(52,211,153,0.4)] hover:shadow-[0_0_40px_rgba(52,211,153,0.6)] flex items-center justify-center"
               >
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
                 <span className="relative flex items-center gap-3">
