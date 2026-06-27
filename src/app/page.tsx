@@ -1478,7 +1478,7 @@ export default function Home() {
               </span>
             </div>
             <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-6xl text-white leading-tight tracking-tight mb-6">
-              Ready to Master<br/><span className="font-medium">Contract Drafting?</span>
+              Ready to Master<br/><span className="font-medium">Contract Drafting &amp; Freelancing?</span>
             </h2>
             <p className="text-white/60 text-lg font-light mb-4 max-w-xl mx-auto">Join 1000+ successful alumni. Start your journey to becoming a top contract drafting professional.</p>
             <div className="flex items-center justify-center gap-3 mb-10">
