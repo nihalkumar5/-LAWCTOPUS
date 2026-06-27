@@ -1480,6 +1480,10 @@ export default function Home() {
                 <span className="text-white text-3xl font-light tracking-tight">Lawctopus<span className="font-semibold">Elite</span></span>
                 <p className="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-2">The Home of Legal Careers</p>
               </div>
+              
+              <div className="mb-10">
+                <Image src="/footer_illustration.png" alt="Footer Logo" width={300} height={150} className="w-full max-w-[200px] object-contain opacity-80 hover:opacity-100 transition-opacity" />
+              </div>
 
               <div className="space-y-10">
                 {/* Contact Block 1 */}
