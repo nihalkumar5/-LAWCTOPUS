@@ -1479,7 +1479,19 @@ export default function Home() {
         <section className="w-full py-24 bg-white border-t border-black/5 relative overflow-hidden">
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={scaleIn} className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10 text-center">
-            <h2 className="font-sans font-light text-3xl md:text-4xl text-charcoal mb-6 tracking-tight">Questions?</h2>
+            <h2 className="font-sans font-light text-3xl md:text-4xl text-charcoal mb-6 tracking-tight flex justify-center">
+              {"Questions?".split("").map((char, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.1, delay: 0.3 + (index * 0.1) }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </h2>
             <p className="text-charcoal/70 text-lg font-light max-w-2xl mx-auto mb-8">
               If you have any queries regarding the course, please reach out to us. We will get back to you within 24 hours!
             </p>
