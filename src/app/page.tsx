@@ -410,8 +410,15 @@ export default function Home() {
                   </div>
                 </div>
 
-                <button onClick={() => setIsSignUpModalOpen(true)} className="inline-block bg-[#164336] text-white px-10 py-5 rounded-full font-medium tracking-wide hover:bg-[#113128] transition-colors hover:scale-105 transform duration-300 shadow-[0_8px_30px_rgba(22,67,54,0.3)]">
-                  ENROL NOW
+                <button 
+                  onClick={() => setIsSignUpModalOpen(true)} 
+                  className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-10 py-5 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.5)] hover:shadow-[0_0_40px_rgba(22,67,54,0.7)] flex items-center justify-center"
+                >
+                  <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
+                  <span className="relative flex items-center gap-3">
+                    ENROL NOW
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
+                  </span>
                 </button>
               </div>
             </div>
@@ -672,8 +679,15 @@ export default function Home() {
                 </div>
                 
                 <div className="mt-12">
-                  <button onClick={() => setIsSignUpModalOpen(true)} className="w-full bg-white hover:bg-white/90 text-black text-[15px] font-semibold px-8 py-5 transition-all duration-300 flex items-center justify-center gap-3">
-                    Enroll Now <ArrowRight className="h-5 w-5" />
+                  <button 
+                    onClick={() => setIsSignUpModalOpen(true)} 
+                    className="group relative w-full overflow-hidden rounded-xl bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-8 py-5 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.3)] hover:shadow-[0_0_40px_rgba(22,67,54,0.5)] flex items-center justify-center"
+                  >
+                    <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
+                    <span className="relative flex items-center gap-3">
+                      ENROL NOW
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
+                    </span>
                   </button>
                 </div>
               </motion.div>
@@ -1037,8 +1051,15 @@ export default function Home() {
                         <span className="text-xl text-white/30 line-through mb-1.5">Rs. 60,000</span>
                       </div>
                     </div>
-                    <button onClick={() => setIsSignUpModalOpen(true)} className="w-full bg-white text-black py-4 rounded-full font-medium text-[13px] tracking-wide hover:bg-white/90 transition-colors flex items-center justify-center gap-2 group-hover:shadow-lg">
-                      Enroll Now <ArrowRight className="h-4 w-4" />
+                    <button 
+                      onClick={() => setIsSignUpModalOpen(true)} 
+                      className="group relative w-full overflow-hidden rounded-full bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-8 py-4 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.3)] hover:shadow-[0_0_40px_rgba(22,67,54,0.5)] flex items-center justify-center"
+                    >
+                      <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
+                      <span className="relative flex items-center gap-3">
+                        ENROL NOW
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
+                      </span>
                     </button>
                   </div>
 
@@ -1487,8 +1508,15 @@ export default function Home() {
               <span className="text-[11px] text-green-400 font-bold uppercase tracking-wider bg-green-500/10 px-2 py-1 rounded-sm">Save 58%</span>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button onClick={() => setIsSignUpModalOpen(true)} className="inline-block bg-[#164336] text-white px-12 py-5 rounded-full font-medium tracking-wide hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 transform shadow-[0_8px_30px_rgba(22,67,54,0.4)]">
-                ENROL NOW
+              <button 
+                onClick={() => setIsSignUpModalOpen(true)} 
+                className="group relative overflow-hidden rounded-full bg-gradient-to-r from-[#164336] via-[#1e5a47] to-[#164336] bg-[length:200%_auto] hover:bg-[position:100%_center] px-12 py-5 text-white font-bold tracking-widest text-[13px] hover:scale-[1.02] transition-all duration-500 shadow-[0_0_30px_rgba(22,67,54,0.4)] hover:shadow-[0_0_40px_rgba(22,67,54,0.6)] flex items-center justify-center"
+              >
+                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] group-hover:animate-[shimmer_1.5s_infinite] transition-transform duration-1000 ease-in-out"></span>
+                <span className="relative flex items-center gap-3">
+                  ENROL NOW
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform duration-300" />
+                </span>
               </button>
               <a href="https://docs.google.com/document/d/1WDeHa90-mEcnmjQui3dI4WGDaHvpiXlazvsYgGmI-n4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white text-[14px] font-light transition-colors border-b border-white/20 hover:border-white/60 pb-0.5">
                 Download Brochure →
@@ -1672,40 +1700,112 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }} 
               animate={{ opacity: 1, scale: 1, y: 0 }} 
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-md bg-white rounded-3xl shadow-2xl overflow-hidden"
+              className="relative w-full max-w-4xl bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row"
             >
-              <div className="p-8">
-                <button 
-                  onClick={() => setIsSignUpModalOpen(false)}
-                  className="absolute top-6 right-6 text-charcoal/40 hover:text-charcoal transition-colors"
-                >
-                  <X className="w-6 h-6" />
-                </button>
-                
-                <h3 className="text-2xl font-medium text-charcoal mb-2">Join Lawctopus Elite</h3>
-                <p className="text-charcoal/60 mb-8 font-light">Enter your details to start your enrollment process.</p>
+              <button 
+                onClick={() => setIsSignUpModalOpen(false)}
+                className="absolute top-6 right-6 md:right-auto md:left-6 z-20 w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-charcoal/60 hover:text-charcoal hover:bg-gray-200 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
 
-                <form className="space-y-4" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-1">Full Name</label>
-                    <input required type="text" className="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all" placeholder="John Doe" />
+              {/* LEFT SIDE - FORM */}
+              <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+                <div className="md:mt-4">
+                  <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-3">Welcome to Elite!</h3>
+                  <p className="text-charcoal/60 mb-10 font-light text-[15px]">Simplify your workflow and boost your productivity with Lawctopus Elite. Get started today.</p>
+
+                  <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); alert("Sign up successful!"); setIsSignUpModalOpen(false); }}>
+                    <div>
+                      <input required type="text" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Full Name" />
+                    </div>
+                    <div>
+                      <input required type="email" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Email Address" />
+                    </div>
+                    <div>
+                      <input required type="tel" className="w-full px-6 py-4 rounded-full border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all text-sm placeholder:text-gray-400 font-medium" placeholder="Phone Number" />
+                    </div>
+                    
+                    <div className="text-right pb-2">
+                      <a href="#" className="text-xs font-semibold text-charcoal hover:text-[#164336] transition-colors">Need help?</a>
+                    </div>
+
+                    <button type="submit" className="w-full bg-[#0a0a0a] text-white py-4 rounded-full font-bold tracking-wide hover:bg-black transition-colors">
+                      Continue to Payment
+                    </button>
+                  </form>
+                  
+                  <div className="mt-10 flex items-center gap-4">
+                    <div className="h-px bg-gray-200 flex-1"></div>
+                    <span className="text-xs text-gray-400 font-medium uppercase tracking-wider">or contact us</span>
+                    <div className="h-px bg-gray-200 flex-1"></div>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-1">Email Address</label>
-                    <input required type="email" className="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all" placeholder="john@example.com" />
+
+                  <div className="flex justify-center gap-5 mt-8">
+                    <a href="#" className="w-14 h-14 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
+                      <Phone className="w-5 h-5 text-white" />
+                    </a>
+                    <a href="#" className="w-14 h-14 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
+                      <Mail className="w-5 h-5 text-white" />
+                    </a>
+                    <a href="#" className="w-14 h-14 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors shadow-lg">
+                      <Globe className="w-5 h-5 text-white" />
+                    </a>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-1">Phone Number</label>
-                    <input required type="tel" className="w-full px-4 py-3 rounded-xl border border-black/10 focus:border-[#164336] focus:ring-1 focus:ring-[#164336] outline-none transition-all" placeholder="+91 98765 43210" />
-                  </div>
-                  <button type="submit" className="w-full bg-[#164336] text-white py-4 rounded-xl font-medium hover:bg-[#164336]/90 transition-colors mt-4">
-                    Continue to Payment
-                  </button>
-                </form>
-                <p className="text-center text-xs text-charcoal/40 mt-6">
-                  By signing up, you agree to our Terms of Service and Privacy Policy.
-                </p>
+                  
+                  <p className="text-center text-sm text-charcoal/60 mt-10 font-medium">
+                    Not sure yet? <a href="#" className="text-[#164336] font-bold hover:underline">Download Brochure</a>
+                  </p>
+                </div>
               </div>
+
+              {/* RIGHT SIDE - GRAPHIC */}
+              <div className="hidden md:flex w-1/2 bg-[#f4f9f6] p-12 flex-col items-center justify-center relative overflow-hidden">
+                {/* Abstract floating circles */}
+                <div className="absolute top-10 left-10 w-32 h-32 border-2 border-green-200/50 rounded-full"></div>
+                <div className="absolute top-20 right-20 w-48 h-48 border-2 border-green-200/50 rounded-full"></div>
+                <div className="absolute bottom-40 left-20 w-40 h-40 border-2 border-green-200/50 rounded-full"></div>
+                <div className="absolute -top-10 -right-10 w-64 h-64 border-2 border-green-200/50 rounded-full"></div>
+                
+                {/* Floating Widget 1 */}
+                <div className="absolute top-1/4 left-8 bg-white px-5 py-4 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex items-center gap-4 z-10 animate-[bounce_4s_infinite]">
+                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+                    <Check className="w-6 h-6 text-green-600" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-gray-900">54+ Sessions</p>
+                    <p className="text-xs text-gray-500 font-medium">Live Expert</p>
+                  </div>
+                </div>
+
+                {/* Main Illustration Area */}
+                <div className="relative z-0 mt-8">
+                  <div className="w-72 h-72 bg-[#164336]/10 rounded-full flex items-center justify-center">
+                    <Award className="w-32 h-32 text-[#164336]" />
+                  </div>
+                </div>
+
+                {/* Floating Widget 2 */}
+                <div className="absolute bottom-1/3 right-8 bg-white p-5 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col gap-3 z-10 animate-[bounce_5s_infinite]">
+                  <p className="text-sm font-bold text-gray-900">Contract Drafting</p>
+                  <p className="text-xs text-gray-500 font-medium -mt-2">10 Tasks</p>
+                  <div className="flex items-center gap-4 mt-2">
+                    <span className="text-[10px] font-bold border border-gray-200 rounded-full px-3 py-1.5">Drafting</span>
+                    <div className="relative w-10 h-10">
+                      <svg viewBox="0 0 36 36" className="w-10 h-10 text-green-500">
+                        <path className="text-gray-100" strokeWidth="4" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        <path className="text-green-500" strokeDasharray="84, 100" strokeWidth="4" stroke="currentColor" fill="none" strokeLinecap="round" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                      </svg>
+                      <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold">84%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-20 text-center z-10 relative">
+                  <h4 className="text-2xl font-bold text-gray-900 mb-2">Make your work easier<br/>and organized with <span className="text-[#164336]">Elite</span></h4>
+                </div>
+              </div>
+
             </motion.div>
           </div>
         )}
