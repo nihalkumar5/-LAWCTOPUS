@@ -1787,21 +1787,7 @@ export default function Home() {
                   <img src="/1.png" alt="Elite Course Illustration" className="w-full h-auto object-contain z-10 drop-shadow-2xl" />
                 </div>
 
-                {/* Floating Widget 2 */}
-                <div className="absolute bottom-20 md:bottom-24 right-2 md:right-0 bg-white p-5 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col gap-3 z-20 animate-[bounce_5s_infinite]">
-                  <p className="text-sm font-bold text-gray-900">Practical Skills</p>
-                  <p className="text-xs text-gray-500 font-medium -mt-2">24+ Contracts</p>
-                  <div className="flex items-center gap-4 mt-2">
-                    <span className="text-[10px] font-bold border border-gray-200 rounded-full px-3 py-1.5">Drafting</span>
-                    <div className="relative w-10 h-10">
-                      <svg viewBox="0 0 36 36" className="w-10 h-10 text-green-500">
-                        <path className="text-gray-100" strokeWidth="4" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <path className="text-green-500" strokeDasharray="100, 100" strokeWidth="4" stroke="currentColor" fill="none" strokeLinecap="round" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
-                      </svg>
-                      <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold">100%</span>
-                    </div>
-                  </div>
-                </div>
+
 
                 <div className="mt-12 text-center z-10 relative">
                   <h4 className="text-2xl font-bold text-gray-900 mb-2">Build a dream career<br/>with <span className="text-[#164336]">Lawctopus Elite</span></h4>
