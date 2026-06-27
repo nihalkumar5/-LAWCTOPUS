@@ -298,9 +298,12 @@ export default function Home() {
         {/* Modern Glassmorphism Navbar */}
         <motion.div initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }} className="fixed top-0 w-full flex justify-center px-6 lg:px-12 pt-5 z-50">
           <header className="w-full max-w-[1100px] flex items-center justify-between bg-[#111111]/40 backdrop-blur-xl border border-white/10 rounded-full px-8 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all">
-            <div className="font-serif font-black tracking-tighter flex items-center gap-3">
+            <button 
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="font-serif font-black tracking-tighter flex items-center gap-3 hover:opacity-80 transition-opacity cursor-pointer"
+            >
               <span className="text-white text-[20px] font-sans font-light tracking-tight">Lawctopus<span className="font-bold">Elite</span></span>
-            </div>
+            </button>
             
             <nav className="hidden lg:flex gap-10 items-center">
               <a href="#program" className="text-[13px] font-medium text-white/80 hover:text-white transition-colors">Program</a>
