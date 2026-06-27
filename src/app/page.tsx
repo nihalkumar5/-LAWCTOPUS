@@ -743,7 +743,7 @@ export default function Home() {
                 ))}
                 </div>
                 <div className="lg:col-span-5 hidden lg:flex flex-col justify-center sticky top-24 max-h-[80vh]">
-                  <Image src="/3.png" alt="Student Reading" width={800} height={800} className="w-full max-w-none object-contain mx-auto mix-blend-multiply opacity-95 drop-shadow-xl scale-[1.35] transform origin-right" />
+                  <Image src="/3.png" alt="Student Reading" width={800} height={800} className="w-full max-w-none object-contain ml-auto mr-[-2rem] mix-blend-multiply opacity-95 drop-shadow-xl scale-[1.7] transform translate-x-12 origin-center" />
                 </div>
               </div>
 
