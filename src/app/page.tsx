@@ -509,7 +509,7 @@ export default function Home() {
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeInUp} className="text-center max-w-3xl mx-auto mb-16">
               <span className="text-white/40 text-[10px] font-bold tracking-[0.25em] uppercase mb-4 block">The Lawctopus Elite Advantage</span>
               <h2 className="font-sans font-medium text-3xl md:text-5xl text-white leading-tight tracking-tight">
-                Why You Should Join This Course
+                Why You Should Join This Course?
               </h2>
             </motion.div>
 
