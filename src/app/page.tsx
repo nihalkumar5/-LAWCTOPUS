@@ -1772,7 +1772,7 @@ export default function Home() {
                 <div className="absolute -top-10 -right-10 w-64 h-64 border-2 border-green-200/50 rounded-full"></div>
                 
                 {/* Floating Widget 1 */}
-                <div className="absolute top-12 md:top-16 left-2 md:-left-4 bg-white px-5 py-4 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex items-center gap-4 z-20 animate-[bounce_4s_infinite]">
+                <div className="absolute top-12 md:top-16 left-6 md:left-8 bg-white/40 backdrop-blur-md border border-white/50 px-5 py-4 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex items-center gap-4 z-20 animate-[bounce_4s_infinite]">
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
                     <Check className="w-6 h-6 text-green-600" />
                   </div>
