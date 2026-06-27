@@ -298,7 +298,7 @@ export default function Home() {
             
             <div className="flex gap-6 items-center">
               <button onClick={() => setIsApplyModalOpen(true)} className="hidden sm:block text-[13px] font-medium text-white/80 hover:text-white transition-colors">Log In</button>
-              <motion.button onClick={() => setIsApplyModalOpen(true)} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-white text-black text-[13px] font-medium px-7 py-2.5 rounded-full transition-all shadow-lg hover:shadow-xl shadow-white/5">
+              <motion.button onClick={() => setIsSignUpModalOpen(true)} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-white text-black text-[13px] font-medium px-7 py-2.5 rounded-full transition-all shadow-lg hover:shadow-xl shadow-white/5">
                 Enrol Now
               </motion.button>
             </div>
@@ -1712,6 +1712,10 @@ export default function Home() {
               {/* LEFT SIDE - FORM */}
               <div className="w-full md:w-1/2 p-8 md:px-14 md:py-10 flex flex-col justify-center">
                 <div className="md:mt-0">
+                  <div className="flex items-center gap-2 mb-4">
+                    <div className="w-7 h-7 bg-[#164336] rounded text-white flex items-center justify-center font-serif font-bold text-lg leading-none pt-0.5">L</div>
+                    <span className="text-xl tracking-tight text-charcoal font-light">Lawctopus<span className="font-bold">Elite</span></span>
+                  </div>
                   <h3 className="text-[2rem] leading-tight font-bold text-charcoal mb-2">Join the Elite 1%</h3>
                   <p className="text-charcoal/60 mb-6 font-light text-[15px]">Master contract drafting and freelancing in just 6 months. Enter your details to secure your seat.</p>
 
@@ -1768,7 +1772,7 @@ export default function Home() {
                 <div className="absolute -top-10 -right-10 w-64 h-64 border-2 border-green-200/50 rounded-full"></div>
                 
                 {/* Floating Widget 1 */}
-                <div className="absolute top-1/4 left-8 bg-white px-5 py-4 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex items-center gap-4 z-10 animate-[bounce_4s_infinite]">
+                <div className="absolute top-12 md:top-16 left-2 md:-left-4 bg-white px-5 py-4 rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex items-center gap-4 z-20 animate-[bounce_4s_infinite]">
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
                     <Check className="w-6 h-6 text-green-600" />
                   </div>
@@ -1784,7 +1788,7 @@ export default function Home() {
                 </div>
 
                 {/* Floating Widget 2 */}
-                <div className="absolute bottom-1/3 right-8 bg-white p-5 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col gap-3 z-10 animate-[bounce_5s_infinite]">
+                <div className="absolute bottom-20 md:bottom-24 right-2 md:right-0 bg-white p-5 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.08)] flex flex-col gap-3 z-20 animate-[bounce_5s_infinite]">
                   <p className="text-sm font-bold text-gray-900">Practical Skills</p>
                   <p className="text-xs text-gray-500 font-medium -mt-2">24+ Contracts</p>
                   <div className="flex items-center gap-4 mt-2">
