@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { 
   Shield, Check, X, ChevronDown, ChevronUp, Star, ArrowRight, 
   Clock, BookOpen, Award, TrendingUp, Calendar, DollarSign, 
@@ -706,8 +707,9 @@ export default function Home() {
                 </h2>
               </motion.div>
               
-              <div className="max-w-5xl mx-auto border-t border-black/10">
-                {[
+              <div className="max-w-[1200px] mx-auto border-t border-black/10 grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div className="lg:col-span-7">
+                  {[
                   { title: "Well-researched, practical & detailed reading resources" },
                   { title: "Weekly Live Sessions for the first 2 months" },
                   { title: "7-8 Live Sessions per month for the next 4 months" },
@@ -739,6 +741,10 @@ export default function Home() {
                     </div>
                   </div>
                 ))}
+                </div>
+                <div className="lg:col-span-5 hidden lg:flex flex-col justify-center sticky top-24 max-h-[80vh]">
+                  <Image src="/3.png" alt="Student Reading" width={600} height={600} className="w-full max-w-[500px] object-contain mx-auto mix-blend-multiply opacity-90 drop-shadow-xl" />
+                </div>
               </div>
 
               <div className="max-w-5xl mx-auto mt-12 px-6 md:px-10">
@@ -763,6 +769,10 @@ export default function Home() {
                 How Will This Course Help You?
               </h2>
             </motion.div>
+
+            <div className="w-full flex justify-center mb-24 opacity-80 mix-blend-screen">
+              <Image src="/4.png" alt="Learning Experience" width={800} height={500} className="w-full max-w-[700px] object-contain filter invert" />
+            </div>
             
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-40px" }} variants={staggerFast} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
@@ -807,9 +817,14 @@ export default function Home() {
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
             <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center justify-between">
               
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInLeft} className="md:w-1/3">
-                <span className="text-[#164336] text-[10px] font-bold tracking-[0.25em] uppercase block mb-4">Target Audience</span>
-                <h2 className="font-sans font-light text-4xl lg:text-5xl text-charcoal leading-tight tracking-tight">Who can enroll<br/>for this course?</h2>
+              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={fadeInLeft} className="md:w-1/3 flex flex-col justify-between">
+                <div>
+                  <span className="text-[#164336] text-[10px] font-bold tracking-[0.25em] uppercase block mb-4">Target Audience</span>
+                  <h2 className="font-sans font-light text-4xl lg:text-5xl text-charcoal leading-tight tracking-tight">Who can enroll<br/>for this course?</h2>
+                </div>
+                <div className="hidden md:block mt-12 mix-blend-multiply opacity-95">
+                  <Image src="/6.png" alt="Professional" width={400} height={400} className="w-full object-contain" />
+                </div>
               </motion.div>
 
               <div className="md:w-2/3 border-t border-black/10">
@@ -1210,17 +1225,22 @@ export default function Home() {
         {/* MONEY BACK GUARANTEE */}
         <section className="w-full py-[140px] bg-white border-y border-black/5 relative overflow-hidden bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:4rem_4rem]">
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={scaleIn} className="max-w-4xl mx-auto text-center mb-16">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[#164336]/10 text-[#164336] mb-8">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} variants={scaleIn} className="max-w-[1100px] mx-auto mb-20 flex flex-col md:flex-row items-center gap-16">
+              <div className="md:w-1/2">
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-full bg-[#164336]/10 text-[#164336] mb-8">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                </div>
+                <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-7xl text-charcoal leading-[1.1] tracking-tight mb-8">100% Money-Back Guarantee</h2>
+                <p className="text-charcoal/70 text-lg leading-relaxed font-light mb-6">
+                  We truly believe our courses will enhance your legal skills, confidence, and career prospects.
+                </p>
+                <p className="text-charcoal/70 text-lg leading-relaxed font-light font-medium text-charcoal">
+                  If you complete any of our courses &quot;sincerely&quot; and still feel it didn&apos;t add value to your career, we&apos;ll refund 100% of your fee; no questions asked.
+                </p>
               </div>
-              <h2 className="font-sans font-light text-4xl md:text-5xl lg:text-6xl text-charcoal leading-tight tracking-tight mb-6">100% Money-Back Guarantee</h2>
-              <p className="text-charcoal/70 text-lg leading-relaxed font-light mb-6">
-                We truly believe our courses will enhance your legal skills, confidence, and career prospects.
-              </p>
-              <p className="text-charcoal/70 text-lg leading-relaxed font-light font-medium text-charcoal">
-                If you complete any of our courses &quot;sincerely&quot; and still feel it didn&apos;t add value to your career, we&apos;ll refund 100% of your fee; no questions asked.
-              </p>
+              <div className="md:w-1/2 hidden md:flex justify-center mix-blend-multiply opacity-90">
+                <Image src="/7.png" alt="Guarantee" width={500} height={500} className="w-full max-w-[450px] object-contain" />
+              </div>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto border-t border-black/10 pt-16">
@@ -1323,6 +1343,9 @@ export default function Home() {
                   }`} />
                 </button>
               ))}
+              <div className="hidden lg:flex justify-center mt-12 opacity-60 mix-blend-screen">
+                <Image src="/2.png" alt="Building Blocks" width={300} height={300} className="w-full max-w-[250px] object-contain filter invert" />
+              </div>
             </div>
 
             {/* Timeline Detail Card (Right Column) */}
