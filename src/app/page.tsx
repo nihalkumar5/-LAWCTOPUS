@@ -1470,6 +1470,9 @@ export default function Home() {
       <footer className="w-full bg-[#0a0a0a] pt-24 pb-12 border-t border-white/10 relative overflow-hidden">
         {/* Subtle Background Elements */}
         <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#164336] rounded-full blur-[150px] opacity-10 pointer-events-none"></div>
+        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
+          <Image src="/footer_illustration.png" alt="Footer Background" fill className="object-cover opacity-30 mix-blend-screen" />
+        </div>
 
         <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-16 lg:gap-8 mb-20">
@@ -1479,10 +1482,6 @@ export default function Home() {
               <div className="mb-10">
                 <span className="text-white text-3xl font-light tracking-tight">Lawctopus<span className="font-semibold">Elite</span></span>
                 <p className="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-2">The Home of Legal Careers</p>
-              </div>
-              
-              <div className="mb-10">
-                <Image src="/footer_illustration.png" alt="Footer Logo" width={300} height={150} className="w-full max-w-[200px] object-contain opacity-80 hover:opacity-100 transition-opacity" />
               </div>
 
               <div className="space-y-10">
