@@ -688,8 +688,8 @@ export default function Home() {
               
               <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeInRight} className="flex flex-col gap-8">
                 <div className="flex flex-col items-center lg:items-end w-full lg:pr-16 mb-4">
-                  <Image src="/3.png" alt="Student Reading" width={400} height={400} className="w-full max-w-[260px] object-contain mix-blend-multiply opacity-95 drop-shadow-xl" />
-                  <div className="w-[260px] h-[2px] bg-black/10 mt-6 rounded-full"></div>
+                  <Image src="/3.png" alt="Student Reading" width={400} height={400} className="w-full max-w-[300px] object-contain mix-blend-multiply opacity-95 drop-shadow-xl relative z-10 translate-y-0" />
+                  <div className="w-[280px] h-[2px] bg-black/10 mt-0 rounded-full relative z-0"></div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-6">
                   <div className="group bg-transparent border border-black/10 hover:border-black/30 p-10 flex-1 flex flex-col justify-center items-center text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
@@ -826,7 +826,7 @@ export default function Home() {
                   <h2 className="font-sans font-light text-4xl lg:text-5xl text-charcoal leading-tight tracking-tight">Who can enroll<br/>for this course?</h2>
                 </div>
                 <div className="hidden md:block mt-12 mix-blend-multiply opacity-95">
-                  <Image src="/6.png" alt="Professional" width={500} height={500} className="w-full object-contain scale-[1.35] transform origin-top" />
+                  <Image src="/6.png" alt="Professional" width={500} height={500} className="w-full object-contain scale-[1.35] transform origin-top -translate-x-6 -translate-y-6" />
                 </div>
               </motion.div>
 
