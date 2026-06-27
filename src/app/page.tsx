@@ -1299,7 +1299,7 @@ export default function Home() {
         <section id="curriculum" className="w-full py-[140px] bg-[#0a0a0a] border-t border-white/10 relative overflow-hidden">
           <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
             <div className="relative w-full max-w-[700px] h-[700px]">
-              <Image src="/5.png" alt="Curriculum Background" fill className="object-contain opacity-100" />
+              <Image src="/5.png" alt="Curriculum Background" fill className="object-contain filter invert opacity-30 mix-blend-screen" />
             </div>
           </div>
           <div className="max-w-[1280px] mx-auto px-6 md:px-[60px] lg:px-[120px] relative z-10">
